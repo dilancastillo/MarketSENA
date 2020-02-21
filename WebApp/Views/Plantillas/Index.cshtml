@@ -5,191 +5,322 @@
 }
 
 <style>
-    @@import url(https://fonts.googleapis.com/css?family=Raleway);
-
-    .modelos {
+    .titulo {
         margin-top: 150px;
     }
-
-    .snip1584 {
-        font-family: 'Raleway', sans-serif;
-        position: relative;
-        display: inline-block;
-        overflow: hidden;
-        margin: 10px;
-        min-width: 230px;
-        max-width: 340px;
-        width: 100%;
-        color: #ffffff;
-        font-size: 16px;
-        text-align: left;
+    .card-img-top{
+        height: 250px;
     }
-
-        .snip1584 * {
-            -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-            -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-        }
-
-        .snip1584:before {
-            position: absolute;
-            top: 10px;
-            bottom: 10px;
-            left: 10px;
-            right: 10px;
-            top: 100%;
-            content: '';
-            background-color: rgba(51, 51, 51, 0.9);
-            -webkit-transition: all 0.25s ease;
-            transition: all 0.25s ease;
-            -webkit-transition-delay: 0.25s;
-            transition-delay: 0.25s;
-        }
-
-        .snip1584 img {
-            vertical-align: top;
-            max-width: 100%;
-            backface-visibility: hidden;
-        }
-
-        .snip1584 figcaption {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .snip1584 h3,
-        .snip1584 h5 {
-            margin: 0;
-            opacity: 0;
-            letter-spacing: 1px;
-        }
-
-        .snip1584 h3 {
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-            text-transform: uppercase;
-            font-weight: 400;
-            -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-            margin-bottom: 5px;
-        }
-
-        .snip1584 h5 {
-            font-weight: normal;
-            background-color: #5D6D7E;
-            padding: 3px 10px;
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-
-        .snip1584 a {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 1;
-        }
-
-        .snip1584:hover:before,
-        .snip1584.hover:before {
-            top: 10px;
-            -webkit-transition-delay: 0s;
-            transition-delay: 0s;
-        }
-
-        .snip1584:hover h3,
-        .snip1584.hover h3,
-        .snip1584:hover h5,
-        .snip1584.hover h5 {
-            -webkit-transform: translateY(0);
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .snip1584:hover h3,
-        .snip1584.hover h3 {
-            -webkit-transition-delay: 0.3s;
-            transition-delay: 0.3s;
-        }
-
-        .snip1584:hover h5,
-        .snip1584.hover h5 {
-            -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-        }
 </style>
 
-<section class="modelos">
+<section class="titulo mb-5">
     <div class="container">
         <div class="row">
             <div class="col">
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
-                    <figcaption>
-                        <h3>Burgundy Flemming</h3>
-                        <h5>Advertising</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg" alt="sample119" />
-                    <figcaption>
-                        <h3>Nigel Nigel</h3>
-                        <h5>Sound &amp; Vision</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg" alt="sample120" />
-                    <figcaption>
-                        <h3>Caspian Bellevedere</h3>
-                        <h5>Accounting</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
+                <h1 class="text-center">Modelos de Negocio Digital</h1>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Card deck -->
+                <div class="card-deck">
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/corretaje.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Corretaje</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/anuncio.jpeg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Publicitario</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/infomediario.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Infomediario</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!-- Card deck -->
             </div>
         </div>
 
         <div class="row">
             <div class="col">
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample87.jpg" alt="sample87" />
-                    <figcaption>
-                        <h3>Burgundy Flemming</h3>
-                        <h5>Advertising</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample119.jpg" alt="sample119" />
-                    <figcaption>
-                        <h3>Nigel Nigel</h3>
-                        <h5>Sound &amp; Vision</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
-                <figure class="snip1584">
-                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample120.jpg" alt="sample120" />
-                    <figcaption>
-                        <h3>Caspian Bellevedere</h3>
-                        <h5>Accounting</h5>
-                    </figcaption><a href="#"></a>
-                </figure>
+                <!-- Card deck -->
+                <div class="card-deck">
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/mercantil.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Mercantil</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/fabricante directo.jpg"
+                                 alt="Card image cap">
+                            <a asp-action="Fabricantedirecto">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Fabricante directo</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="Fabricantedirecto" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/afiliacion.png"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Afiliados</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!-- Card deck -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <!-- Card deck -->
+                <div class="card-deck">
+
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/comunidad.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Comunidad</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/suscripcion.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Suscripción</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+                    <!-- Card -->
+                    <div class="card mb-4">
+
+                        <!--Card image-->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="~/img/utilidad.jpg"
+                                 alt="Card image cap">
+                            <a href="#!">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!--Card content-->
+                        <div class="card-body">
+
+                            <!--Title-->
+                            <h4 class="card-title">Utilidad</h4>
+                            <!--Text-->
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+
+                        </div>
+
+                    </div>
+                    <!-- Card -->
+
+                </div>
+                <!-- Card deck -->
             </div>
         </div>
     </div>
 </section>
-
-
-
-
 
 
 
