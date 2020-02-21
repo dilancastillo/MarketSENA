@@ -1,0 +1,790 @@
+﻿@model IEnumerable<MarketSENA.Models.Plantilla>
+
+@{
+    Layout = "";
+    ViewData["Title"] = "Restaurante";
+}
+
+<link href="~/css/grapes.min.css" rel="stylesheet" />
+<link href="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.css" rel="stylesheet" />
+<script src="~/js/grapes.min.js"></script>
+<script src="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.js"></script>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .gjs-one-bg {
+        background-color: #2C3E50;
+    }
+
+    .gjs-two-color {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .gjs-three-bg {
+        background-color: #E5E7E9;
+        color: white;
+    }
+
+    .gjs-four-color,
+    .gjs-four-color-h:hover {
+        color: #E5E7E9;
+    }
+</style>
+
+<div id="gjs" style="height:0px; overflow:hidden">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="~/img/Restaurante/logo.png" width="140" height="140" class="d-inline-block align-top " alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="index.html"><label for="" class="navegate">INICIO</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="quienessomos.html"><label for="" class="navegate">QUIENES SOMOS</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="menu.html"><label for="" class="navegate">MENU</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="reservaciones.html"><label for="" class="navegate">RESERVACIONES</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="contactenos.html"><label for="" class="navegate">CONTACTO</label></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container d-flex justify-content-center mb-4 img-fluid">
+        <img src="~/img/Restaurante/foto2.jpg" width="700" height="400" class="img-fluid">
+    </div>
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-2 text-center py-3" style="background: #ffff99;">
+                <h3 style="color: #660000;" class="cambioletra"><b>Menu</b></h3><p>
+                    - Carne<br>
+                    - Pollo<br>
+                    - Cerdo
+                </p>
+            </div>
+            <div class="col-md-2 inicio py-3">
+                <img src="~/img/Restaurante/261260935015212.png" width="150" height="150" alt="">
+            </div>
+            <div class="col-md-4 inicio text-center py-3">
+                <h3 style="color: #660000;" class="cambioletra"><b>Reservaciones</b></h3><p>
+                    Para sus reservaciones<br>
+                    comuniquese directamente con<br>
+                    las lineas de atención<br>
+                    329440534 o 94854.
+            </div>
+            <div class="col-md-2 text-center py-3" style="background: #ffff99;">
+                <h3 style="color: #660000;" class="cambioletra"><b>Dirección</b></h3><p>
+                    Cra. 3 N 89<br>
+                    Avenida siempre viva<br>
+                    Soacha.
+            </div>
+            <div class="col-md-2 inicio py-3">
+                <img src="~/img/Restaurante/1495574559-map-location-solid-style-01_84581.png" width="150" height="150" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3" style="color: black;">
+                        Soacha
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3" style="color: black;">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="index.html" style="color: black;">Inicio</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="quienessomos.html" style="color: black;">Quienes Somos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="menu.html" style="color: black;">Menu</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="reservaciones.html" style="color: black;">Reservaciones</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contactenos.html" style="color: black;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3" style="color: black;">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: black;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="~/img/Restaurante/logo.png" width="140" height="140" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="index.html"><label for="" class="navegate">INICIO</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="quienessomos.html"><label for="" class="navegate">QUIENES SOMOS</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="menu.html"><label for="" class="navegate">MENU</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="reservaciones.html"><label for="" class="navegate">RESERVACIONES</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="contactenos.html"><label for="" class="navegate">CONTACTO</label></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h1 style="color: #ffff99; font-family: blackadder; font-size: 60px;">Quienes Somos</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container py-5 px-5">
+        <div class="row">
+            <div class="col-md-12 inicio py-5" style="border-radius: 30px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos a ad hic tempore porro fugiat totam ea. Voluptatem ratione optio omnis, culpa cupiditate exercitationem ea nulla beatae sapiente, praesentium quae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores doloribus sunt, numquam praesentium suscipit repudiandae, autem hic dolores incidunt neque alias quas dolorum distinctio aperiam dignissimos quos. Reiciendis, commodi animi.
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3" style="color: black;">
+                        Soacha
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3" style="color: black;">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="index.html" style="color: black;">Inicio</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="quienessomos.html" style="color: black;">Quienes Somos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="menu.html" style="color: black;">Menu</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="reservaciones.html" style="color: black;">Reservaciones</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contactenos.html" style="color: black;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3" style="color: black;">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: black;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="~/img/Restaurante/logo.png" width="140" height="140" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="index.html"><label for="" class="navegate">INICIO</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="quienessomos.html"><label for="" class="navegate">QUIENES SOMOS</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="menu.html"><label for="" class="navegate">MENU</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="reservaciones.html"><label for="" class="navegate">RESERVACIONES</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="contactenos.html"><label for="" class="navegate">CONTACTO</label></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container px-5">
+        <div class="row px-4 margen">
+            <div class="col-md-12 py-5 px-5 cont">
+                <div class="sombrero">
+                    <img src="~/img/Restaurante/gorro.png" alt="">
+                </div>
+                <div class="py-5">
+                    <b>
+                        <p class="px-5">
+                            CORDERO<br>
+                            $40000<br>
+                            Especias Marroquís, Fetuccine al Burro
+                        </p>
+                        <p class="px-5">
+                            CODILLO DE CERDO<br>
+                            $39000<br>
+                            Piel Crocante, Paprika Ahumada, Hinojo con Naranja, Papas, Chucrut
+                        </p>
+                        <p class="px-5">
+                            CONFIT DE PATO<br>
+                            $45000<br>
+                            Frisée en Vinagreta de Tocineta y Mostaza, Gastrique, Colior Frito
+                        </p>
+                        <p class="px-5">
+                            PULPO AL GRILL<br>
+                            $49000<br>
+                            Papas Fritas, Chorizo Rojo, Salsa Verde
+                        </p>
+                        <p class="px-5">
+                            COLA DE TORO<br>
+                            $38000<br>
+                            Al Vino Tinto y Pimentón Rostizado, Papa Criolla, Judías al Grill
+                        </p>
+
+                        <p class="px-5">
+                            COCHINILLO<br>
+                            $47000<br>
+                            Contado en Especias Dulces, Gratin de Papa, Zanahorias Glaseadas
+                        </p>
+                        <p class="px-5">
+                            OSSOBUCO AL PORCINI<br>
+                            $39000<br>
+                            Pasta Corta, Tomates Salvajes, Hongos Salteados, Albahaca
+                        </p>
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3" style="color: black;">
+                        Soacha
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3" style="color: black;">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="index.html" style="color: black;">Inicio</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="quienessomos.html" style="color: black;">Quienes Somos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="menu.html" style="color: black;">Menu</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="reservaciones.html" style="color: black;">Reservaciones</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contactenos.html" style="color: black;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3" style="color: black;">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: black;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div>
+        <div class="d-flex justify-content-around mt-4 mb-4">
+            <img src="~/img/Restaurante/logo.png" style="width: 130px; height: 130px;">
+        </div>
+        <div class="container p-0 pintar2 d-flex justify-content-between align-items-center">
+            <button class="text-white pintar3 "><i class="fas fa-home" style="font-size: 25px;"></i><a href="index.html" class="text-white">&nbspInicio</a></button>
+        </div>
+
+        <div class="container pintar6 mt-3 mb-5">
+            <div class="row">
+
+
+                <section class="col-md-12 pintarformulario align-items-center">
+                    <div class="col-md-12">
+                        <label for="#ctg_item" class=" my-2 text-center w-100 pl-4 angel mb-4"><b><h1>Angelique Restaurant</h1></b></label>
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-4">
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="date" class="form-control" id="inlineFormInputGroup">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-users" style="font-size: 16;"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Personas">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-male" style="font-size: 25;"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Adultos">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-child" style="font-size: 25;"></i></div>
+                                </div>
+                                <input type="number" class="form-control" id="inlineFormInputGroup" placeholder="Niños">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-clock" style="font-size: 20;"></i></i></div>
+                                </div>
+                                <input type="time" class="form-control" placeholder="Hora">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-signature" style="font-size: 20px;"></i></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nombre">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-at" style="font-size: 20px;"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="E-mail">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="fas fa-phone" style="font-size: 20px;"></i></div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Telefono">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="input-group ">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text" style="background-color: #8c6239; color:white; border-color: #8c6239;"><i class="far fa-sticky-note" style="font-size: 25px;"></i></div>
+                                </div>
+                                <textarea class="form-control" placeholder="Nota"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 d-flex justify-content-center align-items-center">
+                            <button type="submit" class="text-white pintar4 btn mt-4 mb-4" name="buscar">Reservar</button>
+                        </div>
+                        <form>
+                            <script src="https://checkout.epayco.co/checkout.js"
+                                    class="epayco-button"
+                                    data-epayco-key="46eba625c121b7cdd75122e8c0b13822"
+                                    data-epayco-amount="5000"
+                                    data-epayco-name="Reservación"
+                                    data-epayco-description="Reservación en restaurante"
+                                    data-epayco-currency="cop"
+                                    data-epayco-country="co"
+                                    data-epayco-test="true"
+                                    data-epayco-external="false"
+                                    data-epayco-response="https://ejemplo.com/respuesta.html"
+                                    data-epayco-confirmation="https://ejemplo.com/confirmacion">
+                            </script>
+                        </form>
+                    </div>
+
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3" style="color: black;">
+                        Soacha
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3" style="color: black;">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="index.html" style="color: black;">Inicio</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="quienessomos.html" style="color: black;">Quienes Somos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="menu.html" style="color: black;">Menu</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="reservaciones.html" style="color: black;">Reservaciones</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contactenos.html" style="color: black;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3" style="color: black;">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: black;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">
+                <img src="~/img/Restaurante/logo.png" width="140" height="140" class="d-inline-block align-top" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="index.html"><label for="" class="navegate">INICIO</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="quienessomos.html"><label for="" class="navegate">QUIENES SOMOS</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="menu.html"><label for="" class="navegate">MENU</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="reservaciones.html"><label for="" class="navegate">RESERVACIONES</label></a>
+                    </li>
+                    <li class="nav-item active ml-5">
+                        <a class="nav-link" href="contactenos.html"><label for="" class="navegate">CONTACTO</label></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container px-5">
+        <div class="row">
+            <div class="col-md-12 inicio mt-5 mb-5" style="border-radius: 20px;">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="" style="color: #660000; font-family: blackadder; font-size: 80px;">Contacto</label>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <label for="" style="color: black; font-family: blackadder; font-size: 30px;"><b>Nombre:</b></label>
+                                <input type="text" class="form-control" placeholder="Nombre">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="" style="color: black; font-family: blackadder; font-size: 30px;"><b>E-mail:</b></label>
+                                <input type="text" class="form-control" placeholder="E-mail">
+                            </div>
+                            <div class="col-md-12">
+                                <label for="" style="color: black; font-family: blackadder; font-size: 30px;"><b>Mensaje:</b></label>
+                                <textarea class="form-control" placeholder="Mensaje"></textarea>
+                            </div>
+                            <div class="col-md-12 mt-5 text-center">
+                                <button type="button" class="btn text-white mb-5" style="background: #660000;">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map-fo">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63633.65421660898!2d-74.24871189068266!3d4.575446598984516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f757d0cc35403%3A0x9ed118cab97d8e84!2sSoacha%2C%20Cundinamarca%2C%20Colombia!5e0!3m2!1sen!2ssa!4v1571672398078!5m2!1sen!2ssa" class="mt-3" style="display: block; max-width: 100%; max-height: 100%;" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3" style="color: black;">
+                        Soacha
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3" style="color: black;">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-3">
+                            <a href="index.html" style="color: black;">Inicio</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="quienessomos.html" style="color: black;">Quienes Somos</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="menu.html" style="color: black;">Menu</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="reservaciones.html" style="color: black;">Reservaciones</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="contactenos.html" style="color: black;">Contactenos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3" style="color: black;">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: black;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/fontawesome.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.4.1.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/bootstrap/dist/js/popper.min.js"></script>
+    <style>
+        @@font-face {
+            font-family: blackadder;
+            src: url(../fonts/blackadder-itc.ttf);
+        }
+
+        body {
+            background-color: #660000;
+        }
+
+        .navegate {
+            color: #f6aa39;
+        }
+
+        .inicio {
+            background-color: #ffff99;
+            border-right: #660000 1px solid;
+        }
+
+        .cambioletra {
+            font-family: blackadder;
+            font-size: 36px;
+        }
+        /*Menu*/
+        .cont {
+            background-color: #ffff99;
+            border: 5px solid #8c6239;
+            margin-bottom: 70px;
+            position: relative;
+        }
+
+        .sombrero {
+            float: right;
+            position: relative;
+            bottom: 140px;
+            left: 120px;
+        }
+        /* footer */
+        footer {
+            background: #ffff99;
+            position: unset;
+        }
+
+        h3.footer-title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .map-fo iframe {
+            min-height: 200px;
+            border: none;
+        }
+    </style>
+</div>
+
+<script type="text/javascript">
+    var editor = grapesjs.init({
+        height: '100%',
+        container: '#gjs',
+        fromElement: true,
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        allowScripts: 1,
+        plugins: ['gjs-preset-webpage'],
+        pluginsOpts: {
+            'gjs-preset-webpage': {
+                // options
+            }
+        },
+        storageManager: {
+            id: 'gjs-',
+            type: 'local',
+            autosave: false,
+            autoload: true,
+            stepsBeforeSave: 3,
+            urlStore: '',
+            urlLoad: '',
+            contentTypeJson: true
+        },
+        canvas: {},
+    });
+</script>

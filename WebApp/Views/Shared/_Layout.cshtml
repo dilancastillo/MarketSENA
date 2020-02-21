@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MarketSENA</title>
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <script src="~/js/all.js"></script>
+    <script src="~/js/all.min.js"></script>
+    <script src="~/js/fontawesome.js"></script>
+    <script src="~/js/fontawesome.min.js"></script>
+    <style>
+        @@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+        body{
+            font-family: 'Ubuntu', sans-serif;
+            font-size: 17px!important;
+        }
+
+        .navbar {
+            background-color: rgba(0, 0, 0, .6) !important;
+        }
+
+        .portafolio-footer {
+            width: 110px;
+            height: 100px;
+        }
+
+        nav.navbar.black {
+            background-color: #000 !important;
+        }
+
+        footer {
+            background-color: #F2F3F4;
+        }
+    </style>
+</head>
+<body class="mb-0">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-toggleable-sm navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/img/sennova pequeño.png" height="70%" width="70%" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse -sm-inline-flex flex-sm-row-reverse" id="navbarNavDropdown">
+                <partial name="_LoginPartial" />
+                <ul class="navbar-nav ml-auto mx-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Inicio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Plantillas" asp-action="Index">Modelos de negocio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Políticas de privacidad</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container-fluid p-0">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col mt-5">
+                    <img src="~/img/sennova pequeño.png" height="20%" width="40%" class="mb-3" />
+                    <p class="" style="font-size: 15px;">Busca generar capacidades para la investigación aplicada y desarrollo experimental en los Centros de Formación del SENA, a través del desarrollo de proyectos de ciencia, tecnología e innovación en las diferentes líneas programáticas del sistema, y a su vez articular y transferir capacidades de innovación, productividad y competitividad a las empresas.</p>
+                    <a href="https://www.facebook.com/SENABoyacaOficial/"><i style="background-color: aliceblue" class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/SENAComunica?s=08"><i class="fab fa-twitter"></i></a>
+                    <a href="http://www.sena.edu.co/es-co/formacion/Paginas/tecnologia-innovacion.aspx"><i class="fab fa-google"></i></a>
+                    <a href="https://www.google.com/intl/es-419/gmail/about/"><i class="far fa-envelope"></i></a>
+                </div>
+                <div class="col mt-5 mb-5">
+                    <h5 class="mb-3">INFORMACIÓN</h5>
+                    <p>Mipymes del sector industrial y de servicios de Boyacá. Comercialización, comunicación y reconocimiento</p>
+                    <p>Tel: +57 82 159</p>
+                    <p>Email: sennovatunja@gmail.com</p>
+                    <p>Atención: 8am - 6pm</p>
+                </div>
+                <div class="col mt-5 mb-5">
+                    <h5 class="mb-3">PORTAFOLIO</h5>
+                    <div class="img-footer">
+                        <a href="#"><img class="portafolio-footer" src="~/img/corretaje.jpg" /></a>
+                        <a href="#"><img class="portafolio-footer" src="~/img/fabricante directo.jpg" /></a>
+                        <a href="#"><img class="portafolio-footer" src="~/img/funcionario.jpg" /></a>
+                        <br />
+                        <a href="#"><img class="portafolio-footer" src="~/img/utilidad.jpg" /></a>
+                        <a href="#"><img class="portafolio-footer" src="~/img/infomediario.jpg" /></a>
+                        <a href="#"><img class="portafolio-footer" src="~/img/anuncio.jpeg" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mb-2">
+                    <p>Copyright &copy; <b>MarketSENA</b>. Todos los derechos reservados</p> 
+                    <p>Diseñado por <span>Sennova</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 50) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        });
+    </script>
+    <script src="~/js/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/fontawesome.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

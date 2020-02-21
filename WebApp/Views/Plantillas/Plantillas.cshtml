@@ -1,0 +1,884 @@
+﻿@model IEnumerable<MarketSENA.Models.Plantilla>
+
+@{
+    Layout = "";
+    ViewData["Title"] = "Plantillas";
+}
+
+<link href="~/css/grapes.min.css" rel="stylesheet" />
+<link href="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.css" rel="stylesheet" />
+<script src="~/js/grapes.min.js"></script>
+<script src="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.js"></script>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .gjs-one-bg {
+        background-color: #2C3E50;
+    }
+
+    .gjs-two-color {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .gjs-three-bg {
+        background-color: #E5E7E9;
+        color: white;
+    }
+
+    .gjs-four-color,
+    .gjs-four-color-h:hover {
+        color: #E5E7E9;
+    }
+</style>
+
+<div id="gjs" style="height:0px; overflow:hidden">
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+
+    @*VISTA PRINCIPAL*@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="arriba">
+                    <img src="~/img/Empacados/logo.png" width="220" height="120" class="d-inline-block align-top " alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" d-flex justify-content-end ">
+
+                    <!-- social icons -->
+                    <div class="mobamuinfo_social_icons">
+                        <h2 class="sub-con-fo text-li  text-white"> Redes Social</h2>
+                        <ul class="mobamuits_social_list list-unstyled">
+                            <li class="w3_mobamu_facebook">
+                                <a href="#">
+                                    <span class="icon-facebook"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_twitter">
+                                <a href="#">
+                                    <span class="icon-twitter">
+                                        <i class="fab fa-twitter" style="        font-size: 15px;
+"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_dribble">
+                                <a href="#">
+                                    <span class="icon-whatsapp"><i class="fab fa-whatsapp" style="font-size: 19px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_google">
+                                <a href="#">
+                                    <span class="icon-google-plus"><i class="fab fa-google-plus-g" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: 0.4px solid rgb(0, 0, 0);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="background:transparent;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 d-flex justify-content-around">
+                    <li class="nav-item active item-efec text-center  ">
+                        <div class="xx">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="catalogo.html">Catalogo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center  mt-2">
+                        <div class="">
+                            <img src="~/img/Empacados/107831.png" style="width: 40px; height: 40px;" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+    <div class="fondo">
+        <img class="img-fluid" src="~/img/Empacados/caja2.jpg" alt="">
+        <div class="mover text-white">
+            <h2>Lorem Ipsum</h2>
+            <p class="fon">
+                It is a long established fact that a reader will
+                be distracted by the readable content of a
+                page w
+            </p>
+            <button class="btn text-white mas">Más</button>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-2 text-white">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3 xx">
+                        Bogota
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3 xx">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a href="index.html" style="color: white;">Inicio</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="nosotros.html" style="color: white;">Nosotros</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="catalogo.html" style="color: white;">Catalogo</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="contacto.html" style="color: white;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3 xx">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: white;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    @*NOSOTROS*@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="arriba">
+                    <img src="~/img/Empacados/logo.png" width="220" height="120" class="d-inline-block align-top " alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" d-flex justify-content-end ">
+
+                    <!-- social icons -->
+                    <div class="mobamuinfo_social_icons">
+                        <h2 class="sub-con-fo text-li  text-white"> Redes Social</h2>
+                        <ul class="mobamuits_social_list list-unstyled">
+                            <li class="w3_mobamu_facebook">
+                                <a href="#">
+                                    <span class="icon-facebook"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_twitter">
+                                <a href="#">
+                                    <span class="icon-twitter"><i class="fab fa-twitter" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_dribble">
+                                <a href="#">
+                                    <span class="icon-whatsapp"><i class="fab fa-whatsapp" style="font-size: 19px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_google">
+                                <a href="#">
+                                    <span class="icon-google-plus"><i class="fab fa-google-plus-g" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: 0.4px solid rgb(0, 0, 0);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="background:transparent;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 d-flex justify-content-around">
+                    <li class="nav-item active item-efec text-center  ">
+                        <div class="xx">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="productos.html">Catalogo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center  mt-2">
+                        <div class="">
+                            <img src="~/img/Empacados/107831.png" style="width: 40px; height: 40px;" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+
+            </div>
+            <div class="col-md-6 text-center shadow px-3 py-3 xx ">
+                <label for=""><h1>Nuestra Empresa</h1></label><br>
+                Contrary to popular belief, Lorem Ipsum is not simply<br>
+                random text. It has roots in a piece of classical Latin<br>
+                literature from 45 BC, making it over 2000 years old.<br>
+                Richard McClintock, a Latin professor at Hamp-<br>
+                den-Sydney College in Virginia, looked up one of<br>
+                the more obscure Latin words, consectetur, from a<br>
+                Lorem Ipsum passage, and going through the cites of<br>
+                the word in classical literature, discovered the un-<br>
+                doubtable source.
+            </div>
+            <div class="col-md-3">
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="py-2 text-white mt-5">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3 xx">
+                        Bogota
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3 xx">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a href="index.html" style="color: white;">Inicio</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="nosotros.html" style="color: white;">Nosotros</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="productos.html" style="color: white;">Catalogo</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="servicios.html" style="color: white;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3 xx">Contactenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Telefono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: white;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls">
+                            <h4 class="text-li mb-2">Localizacion</h4>
+                            <p>Soacha, Boyaca, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    @*CONTACTO*@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="arriba">
+                    <img src="~/img/Empacados/logo.png" width="220" height="120" class="d-inline-block align-top " alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" d-flex justify-content-end ">
+
+                    <!-- social icons -->
+                    <div class="mobamuinfo_social_icons">
+                        <h2 class="sub-con-fo text-li  text-white"> Redes Social</h2>
+                        <ul class="mobamuits_social_list list-unstyled">
+                            <li class="w3_mobamu_facebook">
+                                <a href="#">
+                                    <span class="icon-facebook"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_twitter">
+                                <a href="#">
+                                    <span class="icon-twitter"><i class="fab fa-twitter" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_dribble">
+                                <a href="#">
+                                    <span class="icon-whatsapp"><i class="fab fa-whatsapp" style="font-size: 19px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_google">
+                                <a href="#">
+                                    <span class="icon-google-plus"><i class="fab fa-google-plus-g" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: 0.4px solid rgb(0, 0, 0);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="background:transparent;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 d-flex justify-content-around">
+                    <li class="nav-item active item-efec text-center  ">
+                        <div class="xx">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="catalogo.html">Catalogo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center  mt-2">
+                        <div class="">
+                            <img src="~/img/Empacados/107831.png" style="width: 40px; height: 40px;" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-2"></div>
+            <div class="col-md-4 px-5 py-3 shadow" style="font-family: caviar; font-size: 20px;">
+                <h2>Contáctenos</h2><hr class="mb-3">
+                <input type="text" class="form-control mt-4" name="" id="" placeholder="Nombre:">
+                <input type="email" class="form-control mt-4" name="" id="" placeholder="E-mail:">
+                <textarea name="" class="form-control mt-4" id="" placeholder="Mensaje:"></textarea>
+                <div class="d-flex justify-content-center mt-3">
+                    <button class="btn btn-warning" style="font-size: 20px;">Enviar</button>
+                </div>
+            </div>
+            <div class="col-md-4 text-white py-5 px-5" style="background: #122550; font-family: caviar; font-size: 20px;">
+                Dirección<br>
+                cra 334 n 7 -76<br>
+                avenida sur<br><br>
+
+                empresa@hotmail.com<br>
+                fax. 76655<br>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="py-2 text-white mt-5">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3 xx">
+                        Bogotá
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3 xx">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a href="index.html" style="color: white;">Inicio</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="nosotros.html" style="color: white;">Nosotros</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="productos.html" style="color: white;">Catálogo</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="servicios.html" style="color: white;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3 xx">Contáctenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Teléfono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: white;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls">
+                            <h4 class="text-li mb-2">Localización</h4>
+                            <p>Soacha, Boyacá, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    @*CATÁLOGO*@
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="arriba">
+                    <img src="~/img/Empacados/logo.png" width="220" height="120" class="d-inline-block align-top " alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class=" d-flex justify-content-end ">
+
+                    <!-- social icons -->
+                    <div class="mobamuinfo_social_icons">
+                        <h2 class="sub-con-fo text-li  text-white"> Redes Social</h2>
+                        <ul class="mobamuits_social_list list-unstyled">
+                            <li class="w3_mobamu_facebook">
+                                <a href="#">
+                                    <span class="icon-facebook"><i class="fab fa-facebook-f" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_twitter">
+                                <a href="#">
+                                    <span class="icon-twitter"><i class="fab fa-twitter" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_dribble">
+                                <a href="#">
+                                    <span class="icon-whatsapp"><i class="fab fa-whatsapp" style="font-size: 19px;"></i></span>
+                                </a>
+                            </li>
+                            <li class="w3_mobamu_google">
+                                <a href="#">
+                                    <span class="icon-google-plus"><i class="fab fa-google-plus-g" style="font-size: 15px;"></i></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="border: 0.4px solid rgb(0, 0, 0);">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler mr-4" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" style="background:transparent;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto w-100 d-flex justify-content-around">
+                    <li class="nav-item active item-efec text-center  ">
+                        <div class="xx">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="catalogo.html">Catalogo</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center ">
+                        <div class="xx">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active item-efec text-center  mt-2">
+                        <div class="">
+                            <img src="~/img/Empacados/107831.png" style="width: 40px; height: 40px;" alt="">
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 shadow mt-4" style="font-size: auto;">
+                <img class="img-fluid" src="~/img/Empacados/1.jpg" alt="">
+                <hr style="border: solid 1px black;" class="mb-2">
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quis consequatur laborum, nulla eius velit voluptate, itaque dolorem perspiciatis distinctio molestias quod harum placeat obcaecati necessitatibus autem voluptates vitae? Sapiente?</p>
+
+                <form>
+                    <script src="https://checkout.epayco.co/checkout.js"
+                            class="epayco-button"
+                            data-epayco-key="a512d662411070c334c80503c0479156"
+                            data-epayco-amount="3.000.000"
+                            data-epayco-name="ASUS VivoBook S15"
+                            data-epayco-description="Computadora portátil"
+                            data-epayco-currency="cop"
+                            data-epayco-country="co"
+                            data-epayco-test="true"
+                            data-epayco-external="false"
+                            data-epayco-response="https://ejemplo.com/respuesta.html"
+                            data-epayco-confirmation="https://ejemplo.com/confirmacion">
+                    </script>
+                </form>
+            </div>
+            <div class="col-md-4 shadow mt-4">
+                <img class="img-fluid" src="~/img/Empacados/2.jpg" alt="">
+                <hr style="border: solid 1px black;" class="mb-2">
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quis consequatur laborum, nulla eius velit voluptate, itaque dolorem perspiciatis distinctio molestias quod harum placeat obcaecati necessitatibus autem voluptates vitae? Sapiente?</p>
+                <form>
+                    <script src="https://checkout.epayco.co/checkout.js"
+                            class="epayco-button"
+                            data-epayco-key="a512d662411070c334c80503c0479156"
+                            data-epayco-amount="3.000.000"
+                            data-epayco-name="ASUS VivoBook S15"
+                            data-epayco-description="Computadora portátil"
+                            data-epayco-currency="cop"
+                            data-epayco-country="co"
+                            data-epayco-test="true"
+                            data-epayco-external="false"
+                            data-epayco-response="https://ejemplo.com/respuesta.html"
+                            data-epayco-confirmation="https://ejemplo.com/confirmacion">
+                    </script>
+                </form>
+            </div>
+            <div class="col-md-4 shadow mt-4">
+                <img class="img-fluid" src="~/img/Empacados/3.jpg" alt="">
+                <hr style="border: solid 1px black;" class="mb-2">
+                <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, quis consequatur laborum, nulla eius velit voluptate, itaque dolorem perspiciatis distinctio molestias quod harum placeat obcaecati necessitatibus autem voluptates vitae? Sapiente?</p>
+                <form>
+                    <script src="https://checkout.epayco.co/checkout.js"
+                            class="epayco-button"
+                            data-epayco-key="a512d662411070c334c80503c0479156"
+                            data-epayco-amount="3.000.000"
+                            data-epayco-name="ASUS VivoBook S15"
+                            data-epayco-description="Computadora portátil"
+                            data-epayco-currency="cop"
+                            data-epayco-country="co"
+                            data-epayco-test="true"
+                            data-epayco-external="false"
+                            data-epayco-response="https://ejemplo.com/respuesta.html"
+                            data-epayco-confirmation="https://ejemplo.com/confirmacion">
+                    </script>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer class="py-2 text-white mt-5">
+        <div class="container pt-xl-4">
+            <div class="row footer-top">
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its">
+                    <h3 class="logo-2 mb-lg-4 mb-3 xx">
+                        Bogotá
+                    </h3>
+                    <!-- Map -->
+                    <div class="map-fo">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3971.231808078457!2d-73.36373218594076!3d5.532593495988392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a7c2d2f63e07b%3A0x7aeb50c1c06285ad!2sPlaza%20de%20Bolivar%2C%20Tunja!5e0!3m2!1sen!2sno!4v1570139434374!5m2!1sen!2sno" frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid"></iframe>
+                    </div>
+                    <!-- //Map -->
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-md-0 mt-4">
+                    <h3 class=" mb-lg-4 mb-3 xx">Links</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-4">
+                            <a href="index.html" style="color: white;">Inicio</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="nosotros.html" style="color: white;">Nosotros</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="productos.html" style="color: white;">Catálogo</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="servicios.html" style="color: white;">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 footer-grid_section_1its mt-lg-0 mt-4">
+                    <h3 class="mb-lg-4 mb-3 xx">Contáctenos</h3>
+                    <div class="contact-info">
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Teléfono</h4>
+                            <p>(+57) 304-334-3430</p>
+                        </div>
+                        <div class="footer-style-w3ls mb-4">
+                            <h4 class="text-li mb-2">Email </h4>
+                            <p><a href="mailto:info@example.com" style="color: white;">diegopedraza888@gmail.com</a></p>
+                        </div>
+                        <div class="footer-style-w3ls">
+                            <h4 class="text-li mb-2">Localización</h4>
+                            <p>Soacha, Boyacá, Colombia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/bootstrap/dist/js/fontawesome.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.4.1.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="~/lib/bootstrap/dist/js/popper.min.js"></script>
+    <style>
+        @@font-face {
+            font-family: caviar;
+            src: url(../fonts/CaviarDreams.ttf);
+        }
+        /* social icons */
+        .mobamuits_social_list li {
+            display: inline-block;
+        }
+
+        .mobamuits_social_list li {
+            width: 34px;
+            height: 34px;
+            text-align: center;
+            display: inline-block;
+            font-size: 13px;
+            margin: 0 3px;
+            -webkit-border-radius: 50%;
+            -o-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+        }
+
+            .mobamuits_social_list li a span {
+                color: #fff;
+                line-height: 34px;
+            }
+
+        .w3_mobamu_dribble {
+            background: gray;
+        }
+
+        .w3_mobamu_facebook {
+            background: gray;
+        }
+
+        .w3_mobamu_google {
+            background: gray;
+        }
+
+        .w3_mobamu_twitter {
+            background: gray;
+        }
+
+        .w3_mobamu_facebook:hover {
+            background: #3b5998;
+        }
+
+        .w3_mobamu_twitter:hover {
+            background: #1da1f2;
+        }
+
+        .w3_mobamu_dribble:hover {
+            background: #50c55e;
+        }
+
+        .w3_mobamu_google:hover {
+            background: #F44336;
+        }
+
+        /*borde navegador*/
+        .xx {
+            width: auto;
+            height: auto;
+            margin: auto;
+            padding: 5px;
+            border-bottom: 1.4px solid;
+            border-image: linear-gradient(to bottom right, #ffffff 0%, #ffa621 100%);
+            border-image-slice: 1;
+        }
+
+        hr {
+            margin-bottom: 0px !important;
+        }
+
+        .fondo {
+            position: relative;
+            display: inline-block;
+            text-align: center;
+        }
+
+        .mover {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .mas {
+            background: #ffa621;
+        }
+
+        .fon {
+            font-size: 15px;
+        }
+
+        /* footer */
+        footer {
+            background: #122550;
+            position: unset;
+        }
+
+        h3.footer-title {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .map-fo iframe {
+            min-height: 200px;
+            border: none;
+        }
+
+        .zoom {
+            /* Aumentamos la anchura y altura durante 2 segundos */
+            transition: width 2s, height 2s, transform 2s;
+            -moz-transition: width 2s, height 2s, -moz-transform 2s;
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+            -o-transition: width 2s, height 2s,-o-transform 2s;
+        }
+
+            .zoom:hover {
+                /* tranformamos el elemento al pasar el mouse por encima al doble de
+        su tamaño con scale(2). */
+                transform: scale(1.1);
+                -moz-transform: scale(1.1); /* Firefox */
+                -webkit-transform: scale(1.1); /* Chrome - Safari */
+                -o-transform: scale(1.1); /* Opera */
+            }
+    </style>
+</div>
+
+<script type="text/javascript">
+    var editor = grapesjs.init({
+        height: '100%',
+        container: '#gjs',
+        fromElement: true,
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        allowScripts: 1,
+        plugins: ['gjs-preset-webpage'],
+        pluginsOpts: {
+            'gjs-preset-webpage': {
+                // options
+            }
+        },
+        storageManager: {
+            id: 'gjs-',
+            type: 'local',
+            autosave: false,
+            autoload: true,
+            stepsBeforeSave: 3,
+            urlStore: '',
+            urlLoad: '',
+            contentTypeJson: true
+        },
+        canvas: {},
+    });
+</script>
