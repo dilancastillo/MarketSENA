@@ -8,7 +8,8 @@
     .titulo {
         margin-top: 150px;
     }
-    .card-img-top{
+
+    .card-img-top {
         height: 250px;
     }
 </style>
@@ -31,6 +32,34 @@
                 <!-- Card deck -->
                 <div class="card-deck">
 
+
+
+                    <!-- Full Height Modal Right -->
+                    <div class="modal fade left" id="ModalCorretaje" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+
+                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+                        <div class="modal-dialog modal-full-height modal-left" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Full Height Modal Right -->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -54,12 +83,38 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#ModalCorretaje" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
                     </div>
                     <!-- Card -->
+                    <!-- Full Height Modal Right -->
+                    <div class="modal fade left" id="ModalPublicitario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+
+                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+                        <div class="modal-dialog modal-full-height modal-left" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Full Height Modal Right -->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -83,12 +138,42 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#ModalPublicitario" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
                     </div>
                     <!-- Card -->
+
+
+
+
+                    <!-- Full Height Modal Right -->
+                    <div class="modal fade left" id="ModalInfomediario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                         aria-hidden="true">
+
+                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
+                        <div class="modal-dialog modal-full-height modal-left" role="document">
+
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...
+                                </div>
+                                <div class="modal-footer justify-content-center">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Full Height Modal Right -->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -112,7 +197,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#ModalInfomediario" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -152,7 +237,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#MyModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -210,7 +295,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#MyModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -250,7 +335,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#MyModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -279,7 +364,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#MyModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -308,7 +393,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#MyModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
@@ -321,6 +406,7 @@
         </div>
     </div>
 </section>
+
 
 
 
