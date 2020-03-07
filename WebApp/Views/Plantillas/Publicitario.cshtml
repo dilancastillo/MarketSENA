@@ -1,0 +1,329 @@
+﻿@model IEnumerable<MarketSENA.Models.Plantilla>
+
+@{
+    Layout = "";
+    ViewData["Title"] = "Publicitario";
+}
+
+
+<link href="~/css/grapes.min.css" rel="stylesheet" />
+<link href="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.css" rel="stylesheet" />
+<script src="~/js/grapes.min.js"></script>
+<script src="~/lib/grapesjs-preset-webpage/dist/grapesjs-preset-webpage.min.js"></script>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .gjs-one-bg {
+        background-color: #2C3E50;
+    }
+
+    .gjs-two-color {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    .gjs-three-bg {
+        background-color: #E5E7E9;
+        color: white;
+    }
+
+    .gjs-four-color,
+    .gjs-four-color-h:hover {
+        color: #E5E7E9;
+    }
+</style>
+
+<div id="gjs" style="height:0px; overflow:hidden">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/all.css">
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/mdb.min.css">
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Publicidad</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            Inicio
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <!-- Slide One - Set the background image for this slide in the line below -->
+                <div class="carousel-item active" style="background-image: url('../img/Publicitario/tim-bennett-OwvRB-M3GwE-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <!-- Slide Two - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('../img/Publicitario/s-o-c-i-a-l-c-u-t-r0saAQNjEjQ-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+                <!-- Slide Three - Set the background image for this slide in the line below -->
+                <div class="carousel-item" style="background-image: url('../img/Publicitario/neonbrand-jVwjd22sRXc-unsplash.jpg')">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="display-4 text-center">Plantilla de Publicidad</h1>
+            <p class="lead text-center">
+                The background images for the slider are set directly in the HTML using inline CSS.
+                The images in
+                this snippet are from <a href="https://unsplash.com">Unsplash</a>, taken by <a href="https://unsplash.com/@@joannakosinska">Joanna Kosinska</a>!
+            </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 text-center">Nuestra empresa</h2>
+                    <p class="lead text-center">
+                        This is a great place to talk about your webpage. This template is purposefully
+                        unstyled so
+                        you can use it as a boilerplate or starting point for you own landing page designs! This template features:
+                    </p>
+                    <ul>
+                        <li>Clickable nav links that smooth scroll to page sections</li>
+                        <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+                        <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+                        <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 text-center">Servicios que ofrecemos</h2>
+                    <p class="lead text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit
+                        inventore, expedita
+                        quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore
+                        ut velit dignissimos.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="container">
+
+            <hr class="mt-2 mb-5">
+
+            <div class="row text-center text-lg-left">
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Publicidad</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/1029.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Fotografía</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/fotografia.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Marca</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/jeff-sheldon-9SyOKYrq-rE-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Desarrollo web</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Diseño web</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/theme-photos-CGpifH3FjOA-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Video</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/sharegrid-gOb6Yfo4mDM-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Red social</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/sharegrid-gOb6Yfo4mDM-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Diseño gráfico</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/46864.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">E-mail marketing</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/2731070.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Mercadeo</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/nordwood-themes-yyMJNPgQ-X8-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Programación</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/pakata-goh-EJMTKCZ00I0-unsplash.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h2 class="text-center">Folleto</h2>
+                    <a href="#" class="d-block mb-4 h-100">
+                        <img class="img-fluid img-thumbnail" src="~/img/Publicitario/PE4EY80.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="display-4 text-center">Contacta con nosotros</h2>
+                    <p class="lead text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat
+                        voluptatem dolor,
+                        provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa
+                        exercitationem, in, quo totam.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center">Copyright &copy; Your Website 2019</p>
+        </div>
+        <!-- /.container -->
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery-3.4.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/mdb.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="~/lib/bootstrap/dist/js/mdb.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.4.1.slim.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        .navbar {
+            background: linear-gradient(to left, #d6eaf8, #ebf5fb) !important;
+        }
+
+        .carousel-item {
+            height: 100vh;
+            min-height: 350px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        section {
+            padding: 150px 0;
+        }
+
+        .img-fluid {
+            height: 200px;
+            width: 300px;
+        }
+
+        footer {
+            background: linear-gradient(to left, #d6eaf8, #ebf5fb) !important;
+        }
+    </style>
+</div>
+
+<script type="text/javascript">
+    var editor = grapesjs.init({
+        height: '100%',
+        container: '#gjs',
+        fromElement: true,
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        allowScripts: 1,
+        plugins: ['gjs-preset-webpage'],
+        pluginsOpts: {
+            'gjs-preset-webpage': {
+                // options
+            }
+        },
+        storageManager: {
+            id: 'gjs-',
+            type: 'local',
+            autosave: false,
+            autoload: true,
+            stepsBeforeSave: 3,
+            urlStore: '',
+            urlLoad: '',
+            contentTypeJson: true
+        },
+        canvas: {},
+    });
+</script>

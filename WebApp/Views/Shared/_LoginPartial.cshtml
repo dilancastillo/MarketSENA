@@ -1,5 +1,6 @@
 ﻿@using System.Security.Principal
 @using Microsoft.AspNetCore.Authentication.AzureADB2C.UI
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 @using Microsoft.Extensions.Options
 @inject IOptionsMonitor<AzureADB2COptions> AzureADB2COptions
 
@@ -15,7 +16,7 @@
         {
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="AzureADB2C" asp-controller="Account" asp-action="EditProfile">
-                    <span class="text-dark">Hello @User.Identity.Name!</span>
+                <span class="text-light">Hello @User.Identity.Name!</span>
                 </a>
             </li>
         }

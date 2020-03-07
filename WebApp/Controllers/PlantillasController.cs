@@ -31,11 +31,6 @@ namespace MarketSENA.Controllers
             var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
             return View(await marketSENAContext.ToListAsync());
         }
-        public async Task<IActionResult> Fabricantedirecto()
-        {
-            var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
-            return View(await marketSENAContext.ToListAsync());
-        }
         public async Task<IActionResult> Panaderia()
         {
             var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
@@ -52,6 +47,16 @@ namespace MarketSENA.Controllers
             return View(await marketSENAContext.ToListAsync());
         }
         public async Task<IActionResult> Restaurante()
+        {
+            var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
+            return View(await marketSENAContext.ToListAsync());
+        }
+        public async Task<IActionResult> Corretaje()
+        {
+            var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
+            return View(await marketSENAContext.ToListAsync());
+        }
+        public async Task<IActionResult> Publicitario()
         {
             var marketSENAContext = _context.Plantilla.Include(p => p.ModeloNegocio);
             return View(await marketSENAContext.ToListAsync());

@@ -1,6 +1,7 @@
 ﻿@model IEnumerable<MarketSENA.Models.Plantilla>
 
 @{
+
     ViewData["Title"] = "Index";
 }
 
@@ -34,32 +35,42 @@
 
 
 
-                    <!-- Full Height Modal Right -->
-                    <div class="modal fade left" id="ModalCorretaje" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    <!-- Central Modal Medium Info -->
+                    <div class="modal fade left" id="sideModalTLInfo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                          aria-hidden="true">
-
-                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-                        <div class="modal-dialog modal-full-height modal-left" role="document">
-
-
+                        <div class="modal-dialog modal-notify modal-info modal-side modal-top-left" role="document">
+                            <!--Content-->
                             <div class="modal-content">
+                                <!--Header-->
                                 <div class="modal-header">
-                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
+                                    <p class="heading lead">Plantillas de Corretaje</p>
+
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true" class="white-text">&times;</span>
                                     </button>
                                 </div>
+
+                                <!--Body-->
                                 <div class="modal-body">
-                                    ...
+
+                                    <img src="~/img/carousel2.jpg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
                                 </div>
+
+                                <!--Footer-->
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <a asp-action="Corretaje" type="button" class="btn btn-info">Consiguela ahora</a>
+                                    <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, gracias</a>
                                 </div>
                             </div>
+                            <!--/.Content-->
                         </div>
                     </div>
-                    <!-- Full Height Modal Right -->
+                    <!-- Central Modal Medium Info-->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -83,38 +94,48 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" data-toggle="modal" data-target="#ModalCorretaje" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#sideModalTLInfo" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
                     </div>
                     <!-- Card -->
-                    <!-- Full Height Modal Right -->
-                    <div class="modal fade left" id="ModalPublicitario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    <!-- Central Modal Medium Info -->
+                    <div class="modal fade left" id="PublicidadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
                          aria-hidden="true">
-
-                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-                        <div class="modal-dialog modal-full-height modal-left" role="document">
-
-
+                        <div class="modal-dialog modal-notify modal-info modal-side modal-top-left" role="document">
+                            <!--Content-->
                             <div class="modal-content">
+                                <!--Header-->
                                 <div class="modal-header">
-                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
+                                    <p class="heading lead">Plantillas de Publicidad</p>
+
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
+                                        <span aria-hidden="true" class="white-text">&times;</span>
                                     </button>
                                 </div>
+
+                                <!--Body-->
                                 <div class="modal-body">
-                                    ...
+
+                                    <img src="~/img/anuncio.jpeg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
                                 </div>
+
+                                <!--Footer-->
                                 <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <a asp-action="Publicitario" type="button" class="btn btn-info">Consiguela ahora</a>
+                                    <a type="button" class="btn btn-outline-info waves-effect" data-dismiss="modal">No, gracias</a>
                                 </div>
                             </div>
+                            <!--/.Content-->
                         </div>
                     </div>
-                    <!-- Full Height Modal Right -->
+                    <!-- Central Modal Medium Info-->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -138,42 +159,12 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="" data-toggle="modal" data-target="#ModalPublicitario" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#PublicidadModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
                     </div>
                     <!-- Card -->
-
-
-
-
-                    <!-- Full Height Modal Right -->
-                    <div class="modal fade left" id="ModalInfomediario" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                         aria-hidden="true">
-
-                        <!-- Add class .modal-full-height and then add class .modal-right (or other classes from list above) to set a position to the modal -->
-                        <div class="modal-dialog modal-full-height modal-left" role="document">
-
-
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title w-100" id="myModalLabel">Corretaje</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    ...
-                                </div>
-                                <div class="modal-footer justify-content-center">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Full Height Modal Right -->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -243,6 +234,67 @@
 
                     </div>
                     <!-- Card -->
+                    <!-- Modal -->
+                    <div class="modal fade right" id="RightModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalPreviewLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-full-height modal-right" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalPreviewLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <h3 class="text-center">Vestir y calzado</h3>
+                                    <img src="~/img/ropa2.jpg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
+                                    <a asp-action="Ropa" type="button" class="btn btn-info">Consiguela ahora</a>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <h3 class="text-center">Industrial</h3>
+                                    <img src="~/img/industria.jpg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
+                                    <a asp-action="Industrial" type="button" class="btn btn-info">Consiguela ahora</a>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <h3 class="text-center">Empacados</h3>
+                                    <img src="~/img/8236.jpg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
+                                    <a asp-action="Plantillas" type="button" class="btn btn-info">Consiguela ahora</a>
+                                </div>
+
+                                <div class="modal-body text-center">
+                                    <h3 class="text-center">Restaurante</h3>
+                                    <img src="~/img/3394.jpg" alt=""
+                                         class="img-fluid">
+
+                                    <div class="text-center">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vero illo error eveniet cum.</p>
+                                    </div>
+                                    <a asp-action="Restaurante" type="button" class="btn btn-info">Consiguela ahora</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Modal -->
                     <!-- Card -->
                     <div class="card mb-4">
 
@@ -250,7 +302,7 @@
                         <div class="view overlay">
                             <img class="card-img-top" src="~/img/fabricante directo.jpg"
                                  alt="Card image cap">
-                            <a asp-action="Fabricantedirecto">
+                            <a asp-action="">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
@@ -266,7 +318,7 @@
                                 content.
                             </p>
                             <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                            <a asp-action="Fabricantedirecto" class="btn btn-light-blue btn-md">Ver más</a>
+                            <a asp-action="" data-toggle="modal" data-target="#RightModal" class="btn btn-light-blue btn-md">Ver más</a>
 
                         </div>
 
